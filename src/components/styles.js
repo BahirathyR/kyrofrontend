@@ -38,7 +38,7 @@ const avatarhead = { display: 'flex', justifyContent: 'center', alignItems: 'cen
 }
 const displayname = { display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '-52px' }
 const displayemail = { display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '-38px' }
-const listItem = { marginBottom: '-200%' }
+const listItem = { marginBottom: '-150%' }
 const image = { width: '220%', marginTop: '10%' }
 const icon = { float: 'right', marginLeft: '50%' }
 const container={

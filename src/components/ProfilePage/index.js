@@ -203,7 +203,6 @@ const ProfilePage = () => {
                 style={styles.textField}
                 name='phoneNo2'
                 label='Phone No(Work)'
-
                 value={formik.values.phoneNo2}
                 onChange={formik.handleChange}
                 InputProps={{
