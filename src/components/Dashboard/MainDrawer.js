@@ -1,8 +1,8 @@
 import { Box, Divider, Drawer, IconButton, Hidden, Typography } from "@material-ui/core";
 import dashboardStyle from "./DashboardStyle";
 import { Menu } from "@material-ui/icons";
-
 import DrawerList from "./DrawerList";
+import { styles } from "../styles";
 
 const MainDrawer = ({ mobileOpen, setMobileOpen }) => {
   const classes = dashboardStyle();
@@ -20,11 +20,11 @@ const MainDrawer = ({ mobileOpen, setMobileOpen }) => {
           onClose={() => setMobileOpen(!mobileOpen)}
         >
 
-          <Box p={2} component="span" style={{ display: 'flex' }}>
+          <Box p={2} component="span" style={styles.div}>
           <div style={{float:'left'}}>
-              <img src='assets/images/kyro-logo.png' style={{width: '220%',marginTop:'10%' }} />
+              <img src='assets/images/kyro-logo.png' style={styles.image} />
             </div>
-            <div style={{float:'right',marginLeft:'50%'}}>
+            <div style={styles.icon}>
             <IconButton
               onClick={() => setMobileOpen(!mobileOpen)}
               color="inherit"

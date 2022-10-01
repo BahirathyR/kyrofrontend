@@ -8,6 +8,7 @@ import {
   VerticalSplit,
   ExitToApp
 } from "@material-ui/icons";
+import { styles } from "../styles";
 
 const navList = [
 
@@ -32,8 +33,8 @@ const DrawerList = () => {
 
       {listdata.map((items) => (
         <ListItem key={items.id} button>
-          <ListItemIcon style={{marginBottom:'-200%'}}>{items.icon}</ListItemIcon>
-            <ListItemText style={{marginBottom:'-200%'}}>{items.linkName}</ListItemText>
+          <ListItemIcon style={styles.listItem}>{items.icon}</ListItemIcon>
+            <ListItemText style={styles.listItem}>{items.linkName}</ListItemText>
           </ListItem>
       ))}
     </List>
